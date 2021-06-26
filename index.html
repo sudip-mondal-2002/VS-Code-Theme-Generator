@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?&family=Rubik:wght@400;500&Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/app/css/style.css" type="text/css" media="screen" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1843c1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1843c1">
+    <meta name="msapplication-TileColor" content="#1843c1">
+    <title>VS Code Theme Color Generator - Sudip Mondal</title>
+    <style>
+        h2,
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.75rem;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+        }
+        
+        .form-item {
+            display: block;
+            margin-bottom: 1rem;
+        }
+        
+        button.button {
+            margin: 3rem 0 3rem;
+        }
+        
+        @media (min-width: 45em) {
+            .form-group {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -0.5rem;
+            }
+            .form-item {
+                flex: 0 0 33%;
+                padding: 0 0.5rem;
+            }
+        }
+        
+        label,
+        input {
+            display: block;
+        }
+        
+        label {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        label[for="themeName"] {
+            font-size: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0;
+        }
+    </style>
+</head>
+
+<body class="page-template page-template-template-vscode-color-generator page-template-template-vscode-color-generator-php page page-id-2360" data-template="base.twig">
+
+
+    <!-- Main Content -->
+    <!-- BEGIN: templates/page-vscode-color-generator.twig -->
+
+    <main class="mt-0">
+
+        <!-- Inner Wrapper -->
+
+        <!-- Hero -->
+        <!-- Post Content -->
+        <article id="post" class="post pt-0 pb-2 pb-3--medium">
+            <section class="hero-wave">
+                <div class="wrapper--narrow">
+                    <h1>VS Code Theme Color Generator</h1>
+                </div>
+            </section>
+
+            <section class="pt-2 pr-sm pb-5 pl-sm">
+                <div class="wrapper--narrow">
+
+                    <p>Want to create your own vscode theme? You have colour choice but don't know how to implement? Here we go. Introducing you to our VS Code theme generator</p>
+
+
+
+                    <p>Enter in a name for your theme, and the different background, foreground, and accent colors.</p>
+
+
+
+                    <div style="height:1rem;" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+                    <hr class="wp-block-separator is-style-default" />
+
+
+
+                    <div style="height:1rem;" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+                    <p> </p>
+
+
+
+                    <p> </p>
+
+
+                    <!-- VS Code Generator -->
+                    <form action="" method="post" id="colorTheme">
+
+                        <div class="form-group">
+                            <div class="form-item">
+                                <label for="themeName">Theme Name</label>
+                                <input type="text" name="themeName" id="themeName" maxlength="20" />
+                            </div>
+                        </div>
+
+                        <h2>Background Colors</h2>
+
+                        <div class="form-group">
+                            <div class="form-item">
+                                <label for="dkBackground">Darkest Background</label>
+                                <input type="text" name="dkBackground" id="dkBackground" data-jscolor="{}" value="#000000" />
+                            </div>
+                            <div class="form-item">
+                                <label for="almostDkBackground">Dark Background</label>
+                                <input type="text" name="almostDkBackground" id="almostDkBackground" data-jscolor="{}" value="#000000" />
+                            </div>
+                            <div class="form-item">
+                                <label for="lighterBackground">Less Dark Background</label>
+                                <input type="text" name="lighterBackground" id="lighterBackground" data-jscolor="{}" value="#000000" />
+                            </div>
+                        </div>
+
+                        <h2>Foreground Colors</h2>
+
+                        <div class="form-group">
+                            <div class="form-item">
+                                <label for="ltForeground">Light Foreground</label>
+                                <input type="text" name="ltForeground" id="ltForeground" data-jscolor="{}" value="#000000" />
+                            </div>
+                            <div class="form-item">
+                                <label for="xltForeground">Lighter Foreground</label>
+                                <input type="text" name="xltForeground" id="xltForeground" data-jscolor="{}" value="#000000" />
+                            </div>
+                        </div>
+
+                        <h2>Accent Colors</h2>
+
+                        <div class="form-group">
+
+                            <div class="form-item">
+                                <label for="darkerAccent1">Darkest Accent Color 1</label>
+                                <input type="text" name="darkerAccent1" id="darkerAccent1" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="lighterAccent1">Medium Dark Accent Color 1</label>
+                                <input type="text" name="lighterAccent1" id="lighterAccent1" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+
+                            <div class="form-item">
+                                <label for="xltAccent1">Lighter Accent Color 1</label>
+                                <input type="text" name="xltAccent1" id="xltAccent1" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="xxltAccent1">Extra Light Accent Color 1</label>
+                                <input type="text" name="xxltAccent1" id="xxltAccent1" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+
+                            <div class="form-item">
+                                <label for="accent2">Accent Color 2</label>
+                                <input type="text" name="accent2" id="accent2" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="darkerAccent2">Darker Accent Color 2</label>
+                                <input type="text" name="darkerAccent2" id="darkerAccent2" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+
+                            <div class="form-item">
+                                <label for="accent3">Accent Color 3</label>
+                                <input type="text" name="accent3" id="accent3" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                        </div>
+
+                        <h2>Application Colors</h2>
+                        <h3>Status Bar Colors</h3>
+
+                        <div class="form-group">
+
+                            <div class="form-item">
+                                <label for="statusBarBackground">Status Bar Background</label>
+                                <input type="text" name="statusBarBackground" id="statusBarBackground" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                            <div class="form-item">
+                                <label for="statusBarForeground">Status Bar Foreground</label>
+                                <input type="text" name="statusBarForeground" id="statusBarForeground" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                        </div>
+
+                        <h3>Minimap</h3>
+
+                        <div class="form-group">
+
+                            <div class="form-item">
+                                <label for="minimapBackground">Minimap Background</label>
+                                <input type="text" name="minimapBackground" id="minimapBackground" data-jscolor="{}" value="#000000" />
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-item">
+                                <button type="submit" id="btnSubmit" class="button large long teal">Gimme My Theme!</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <section id="resultContainer" style="display: none;">
+
+                        <h2>Aaaand here's your theme colors!</h2>
+
+                        <label for="result">Copy and paste this into your theme JSON file:</label>
+                        <textarea id="result" rows="50" cols="80"></textarea>
+                        <!-- END: VS Code Generator -->
+
+                        <div class="fs-1 fs-2--large fw-bold mt-4 mb-sm mb-1--large">Did this help you make a VS Code theme? 😁</div>
+                    </section>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- END: templates/page-vscode-color-generator.twig -->
+    <script defer type="/app/js/app"></script>
+    <script defer type=" text/javascript " src="/app/js/jscolor.js "></script>
+    <script defer type="text/javascript " src="/app/js/theme-generator.js "></script>
+
+</body>
+
+</html>
